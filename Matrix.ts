@@ -127,4 +127,12 @@ class Matrix {
 	public ZTranslate(amount: number) {
 		this.values[14] += amount;
 	}
+	
+	// Translate by X, Y and Z
+	public Translate(x: number, y: number, z: number)
+	{
+		this.values[12] += x;
+		this.values[13] += y;
+		this.values[14] += z;
+	}
 } 
